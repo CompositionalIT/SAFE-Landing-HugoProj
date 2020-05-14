@@ -26,15 +26,15 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Manage. Deploy.
+    title: Something something else.
     # Hero subtitle (optional)
-    subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
+    subtitle: Lsdfaasdfamet is dummy text used by the typography industry
     # Button text
-    buttontext: Get started
+    buttontext: Somememem
     # Where the main hero button links to
     buttonlink: "#"
     # Hero image (from static/images/___)
-    image: illustrations/worker.svg
+    image: logos/safe-top.png
     # Footer logos (from static/images/logos/clients/___.svg)
     clientlogos:
     - systek

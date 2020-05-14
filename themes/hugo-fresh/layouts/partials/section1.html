@@ -2,35 +2,20 @@
 {{- $title    := index $section1 "title" }}
 {{- $subtitle := index $section1 "subtitle" }}
 {{- $tiles    := index $section1 "tiles" }}
-<section class="section section-feature-grey is-medium">
-  <div class="container">
+<section id="learn-more" class="section section-feature-grey is-medium" style="background-color:#4FC1EA">
+  <div class="container mt-50">
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">{{ $title }}</h2>
-      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <h2 class="title is-2" style="color:white;">{{ $title }}</h2>
       <div class="divider is-centered"></div>
     </div>
-
-    <div class="content-wrapper">
-      <div class="columns">
-        {{- range $tiles }}
-        <div class="column is-one-third">
-          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
-            <div class="card-title">
-              <h4>{{ .title }}</h4>
-            </div>
-            <div class="card-icon">
-                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
-            </div>
-            <div class="card-text">
-                <p>{{ .text }}</p>
-            </div>
-            <div class="card-action">
-              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>
-            </div>
-          </div>
-        </div>
-        {{- end }}
+    <div class="columns">
+      {{- range $tiles }}
+      <div class="column is-fullwidth">
+        <section class="section revealOnScroll delay-1" data-animation="fadeInLeft">
+          <p class="subtitle" style="color: white; text-align: center;">{{ .text }}</p>
+        </section>
       </div>
+      {{- end }}
     </div>
   </div>
 </section>

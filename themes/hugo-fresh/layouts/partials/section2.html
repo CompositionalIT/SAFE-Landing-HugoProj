@@ -2,29 +2,25 @@
 {{- $title    := index $section2 "title" }}
 {{- $subtitle := index $section2 "subtitle" }}
 {{- $features := index $section2 "features" }}
-<section class="section is-medium">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-6 mt-60">
-        {{- range $features }}
-        <article class="media icon-box">
-          <figure class="media-left">
+<section class="section is-small">
+  <div class="container" stlye="padding-bottom:1.5em;">
+      {{- range $features }}
+      <div class="columns" style="margin-top:1.5em;">
+          <div class="column is-1by1">
             <p class="image">
-              <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+              <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}" >
             </p>
-          </figure>
-          <div class="media-content mt-50">
+          </div>
+          <div class="column is-10">
             <div class="content">
-              <p>
-                <span class="icon-box-title">{{ .title }}</span>
-
-                <span class="icon-box-text">{{ .text | markdownify }}</span>
+              <p class="is-vcentered">
+                <h4 style="color:#008CB7">{{ .title }}</h4>
+                <p>{{ .text | markdownify }}</p>
               </p>
             </div>
           </div>
-        </article>
-        {{- end }}
       </div>
-    </div>
+      <br/>
+      {{- end }}
   </div>
 </section>

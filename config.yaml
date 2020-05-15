@@ -48,13 +48,13 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Docs
-    url: /
+    url: https://safe-stack.github.io/docs/intro/
   - title: About
-    url: /
-  - title: Get Support
-    url: /
-  - title: Try SAFE-Dojo!
-    url: /
+    url: https://www.compositional-it.com/news-blog/introducing-the-safe-stack/
+  - title: Support
+    url: https://safe-stack.github.io/docs/support/
+  - title: SAFE Dojo
+    url: https://github.com/CompositionalIT/SAFE-Dojo/
     button: true
   section1:
     title: What is SAFE?
@@ -62,90 +62,84 @@ params:
     - icon: mouse-globe
       text: SAFE is an application development stack that brings several technologies together into a single, coherent stack for type-safe, flexible, web-enabled applications that can be written almost entirely in F#.
   section2:
-    title: You're here because you want the best
-    subtitle: And we know it
     features:
     - title: Functional First
       text: Make use of F# throughout your application stack. No need to compromise by shoehorning your design into an OO framework - make use of functional-first constructs and ideas throughout your codebase in F#, even in the browser! Start taking advantage of F# features such as type providers, rich domain modelling and a safer type system today.
       # Icon (from /images/illustrations/icons/___.svg)
-      icon: laptop-globe
+      icon: functional-first
     - title: Skill Reuse
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: doc-sync
-    - title: Nomad system
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: mobile-feed
-  section3:
-    title: One platform
-    subtitle: To rule them all
-    image: illustrations/mockups/app-mockup.png
-    buttonText: Get started
-    buttonLink: "#"
-  section4:
-    title: Our Clients love us!
-    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-    clients:
-    - name: Irma Walters
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Accountant
-      img: 1
-    - name: John Bradley
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Financial Analyst
-      img: 2
-    - name: Gary Blackman
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: HR Manager
-      img: 3
-  section5: true
+      text: Reuse your team's server-side development skills across the entire application stack. There's no need to become a Javascript or CSS expert - with tools and libraries such as Fable, Elmish and Fulma, you can create compelling, mobile-friendly web applications today.
+      icon: skill-reuse
+    - title: Code Sharing
+      text: Seamlessly share F# between client and server. Create domain models that exist on client and server without having to worry about serialization, or create validation logic that can run in both browser and server - no need for expensive round trips for validation in the browser.
+      icon: code-sharing
+    - title: Rapid Development Cycle
+      text: Get results - fast. With full support for .NET Core, including flexible cross platform templates, and cutting-edge features like hot module reloading and shared code you can start creating full-blown applications quicker than ever before.
+      icon: rapid-cycle
+#  section3:
+#    title: One platform
+#    subtitle: To rule them all
+#    image: illustrations/mockups/app-mockup.png
+#    buttonText: Get started
+#    buttonLink: "#"
+#  section4:
+#    title: Our Clients love us!
+#    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+#    clients:
+#    - name: Irma Walters
+#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+#      job: Accountant
+#      img: 1
+#    - name: John Bradley
+#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+#      job: Financial Analyst
+#      img: 2
+#    - name: Gary Blackman
+#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+#      job: HR Manager
+#      img: 3
+#  section5: true
   footer:
     # Logo (from /images/logos/___)
-    logo: fresh-white-alt.svg
+    logo: safe_grayscale.png
     # Social Media Title
-    socialmediatitle: Follow Us
+    socialmediatitle: Follow SAFE
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/lucperkins/github-fresh
-      # Icons are from Font Awesome
+    - link: https://github.com/SAFE-stack
       icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://twitter.com/lucperkins
+    - link: https://twitter.com/safe_stack
       icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
-    bulmalogo: true
-    quicklinks:
-      column1:
-        title: "Product"
-        links:
-        - text: Discover features
-          link: /
-        - text: Why choose our product?
-          link: /
-        - text: Compare features
-          link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
-      column2:
-        title: "Docs"
-        links:
-        - text: Get started
-          link: /
-        - text: User guides
-          link: /
-        - text: Admin guide
-          link: /
-        - text: Developers
-          link: /
-      column3:
-        title: "Blog"
-        links:
-        - text: Latest news
-          link: /blog/first
-        - text: Tech articles
-          link: /blog/second
+#    bulmalogo: true
+#    quicklinks:
+#      column1:
+#        title: "Product"
+#        links:
+#        - text: Discover features
+#          link: /
+#        - text: Why choose our product?
+#          link: /
+#        - text: Compare features
+#          link: /
+#        - text: Our roadmap
+#          link: /
+#        - text: AGB
+#          link: /agb
+#      column2:
+#        title: "Docs"
+#        links:
+#        - text: Get started
+#          link: /
+#        - text: User guides
+#          link: /
+#        - text: Admin guide
+#          link: /
+#        - text: Developers
+#          link: /
+#      column3:
+#        title: "Blog"
+#        links:
+#        - text: Latest news
+#          link: /blog/first
+#        - text: Tech articles
+#          link: /blog/second

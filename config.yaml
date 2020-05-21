@@ -28,40 +28,62 @@ params:
     # Main hero title
     title: SAFE Stack
     # Hero subtitle (optional)
-    subtitle: An end-to-end, functional-first stack for cloud-ready web development that emphasizes type-safe programming.
+#    subtitle: 
+    subtitle: Dive into the world of F# and reap the benefits of functional programming across your entire stack!
     # Button text
     buttontext: Learn More
     # Where the main hero button links to
-    buttonlink: "#learn-more"
+    buttonlink: "#explore-further"
     # Hero image (from static/images/___)
     image: illustrations/safe-stack.png
     # Footer logos (from static/images/logos/clients/___.svg)
     clientlogos:
-    - client: saturn
-      url: https://saturnframework.org/
-    - client: azure
-      url: https://azure.microsoft.com/en-us/
-    - client: fable
-      url: https://fable.io/
-    - client: elmish
-      url: https://elmish.github.io/
+    - client: cit
+      url: https://www.compositional-it.com/
+    - client: lambda
+      url: https://lambdafactory.io/
+#    - client: fable
+#      url: https://fable.io/
+#    - client: elmish
+#      url: https://elmish.github.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Docs
-    url: https://safe-stack.github.io/docs/intro/
-  - title: About
+  - title: About SAFE
     url: https://www.compositional-it.com/news-blog/introducing-the-safe-stack/
-  - title: Support
+  - title: Get Support
     url: https://safe-stack.github.io/docs/support/
-  - title: SAFE Dojo
-    url: https://github.com/CompositionalIT/SAFE-Dojo/
+  - title: SAFE Docs
+    url: https://safe-stack.github.io/docs/intro/
     button: true
+  #  - title: SAFE Dojo
+#    url: https://github.com/CompositionalIT/SAFE-Dojo/
+#    button: true
+#  section1:
+#    title: What is SAFE?
+#    tiles:
+#    - icon: mouse-globe
+#      text: 
   section1:
-    title: What is SAFE?
-    tiles:
-    - icon: mouse-globe
-      text: SAFE is an application development stack that brings several technologies together into a single, coherent stack for type-safe, flexible, web-enabled applications that can be written almost entirely in F#.
+    title: Explore Further
+    tiles: 
+      - title: Quick Start
+        icon: mouse-globe
+        text: Ready to get hands-on? It's quick and easy.
+        url: https://safe-stack.github.io/docs/quickstart/
+        buttonText: Get Up and Running
+      - title: SAFE Dojo
+        icon: laptop-cloud
+        text: Learn SAFE by doing beginner-friendly challanges.
+        url: https://github.com/CompositionalIT/SAFE-Dojo
+        buttonText: Do the SAFE Dojo
+      - title: Live Demo
+        icon: plug-cloud
+        text: See how it all comes together in production.
+        url: https://safe-search-demo-web.azurewebsites.net/
+        buttonText: View a Live Demo
   section2:
+    title: What is SAFE?
+    subtitle: As an end-to-end, functional-first stack for cloud-ready web development, SAFE brings several technologies together into a single, coherent stack for type-safe, flexible applications that can be written almost entirely in F#.
     features:
     - title: Functional First
       text: Make use of F# throughout your application stack. No need to compromise by shoehorning your design into an OO framework - make use of functional-first constructs and ideas throughout your codebase in F#, even in the browser! Start taking advantage of F# features such as type providers, rich domain modelling and a safer type system today.
@@ -76,34 +98,34 @@ params:
     - title: Rapid Development Cycle
       text: Get results - fast. With full support for .NET Core, including flexible cross platform templates, and cutting-edge features like hot module reloading and shared code you can start creating full-blown applications quicker than ever before.
       icon: rapid-cycle
-#  section3:
-#    title: One platform
-#    subtitle: To rule them all
-#    image: illustrations/mockups/app-mockup.png
-#    buttonText: Get started
-#    buttonLink: "#"
-#  section4:
-#    title: Our Clients love us!
+  section3:
+    title: SAFE Search
+    subtitle: A property search demo built entirely with SAFE
+    image: illustrations/mockups/safe-search.PNG
+    buttonText: View Live
+    buttonLink: https://safe-search-demo-web.azurewebsites.net/
+  section4:
+    title: Testimonials
 #    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-#    clients:
-#    - name: Irma Walters
-#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+    clients:
+    - name: MSU Solutions
+      quote: We at msu solutions GmbH are big fans of SAFE stack. For the last couple of years we were already using F# open source technologies for web and mobile projects. Tools like the Fable compiler and elmish are rock solid and a pleasure to work with.
 #      job: Accountant
-#      img: 1
-#    - name: John Bradley
-#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      img: 1
+    - name: Goswin Rothenthal
+      quote: It just works! The docs are very detailed and helpful. I got the template up and running on a public URL on Azure within one hour. Without any issues. Even though I am new to dotnet core and Azure.
 #      job: Financial Analyst
-#      img: 2
-#    - name: Gary Blackman
-#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      img: 2
+    - name: Demetrix
+      quote: SAFE was the perfect place to start our biological design and data management platform. I would start with SAFE again in a heartbeat for a new project. We shared some of our experiences at Open F# 2018.
 #      job: HR Manager
-#      img: 3
+      img: 3
 #  section5: true
   footer:
     # Logo (from /images/logos/___)
     logo: safe_grayscale.png
     # Social Media Title
-    socialmediatitle: Follow SAFE
+    socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
     - link: https://github.com/SAFE-stack

@@ -4,7 +4,7 @@
 {{- $socialMedia := index $footer "socialmedia" }}
 {{- $bulmaLogo   := index $footer "bulmalogo" }}
 {{- $socialMediaTitle    := index $footer "socialmediatitle" }}
-<footer class="footer footer-dark" style="padding-bottom:4em;">
+<footer class="footer footer-dark" style="padding-bottom:4em; background-color:#008CB7;">
   <div class="container">
     <div class="level">
       <div class="level-left">
@@ -18,9 +18,9 @@
         <div class="level item">
           <div class="footer-column">
             <div class="footer-header" style="text-align:center;">
-              <h3>{{ $socialMediaTitle }}</h3>
+              <h3 style="color:#9FACB0; font-weight:bolder;">{{ $socialMediaTitle }}</h3>
               {{- range $socialMedia }}
-              <a href="{{ .link }}" style="margin-left:0.5em; margin-right:0.5em;">
+              <a href="{{ .link }}" style="margin-left:0.5em; margin-right:0.5em; color:white;">
                   <span class="icon"><i class="fa fa-{{ .icon }} fa-2x"></i></span>
               </a>
               {{- end }}

@@ -1,7 +1,8 @@
-baseURL: http://something-fresh.org/
+baseURL: http://localhost:1313/
 languageCode: en-us
 title: SAFE
 theme: hugo-fresh
+STATIC_URL = /static
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
 # Disables warnings
 disableKinds:
@@ -11,6 +12,9 @@ markup:
   goldmark:
     renderer:
       unsafe: true # Allows you to write raw html in your md files
+build:
+  useResourceCacheWhen: fallback
+  writeStats: true
 
 params:
   # Open graph allows easy social sharing. If  you don't want it you can set it to false or just delete the variable
@@ -52,7 +56,7 @@ params:
     url: https://www.compositional-it.com/news-blog/introducing-the-safe-stack/
   - title: Get Support
     url: https://safe-stack.github.io/docs/support/
-  - title: SAFE Docs
+  - title: Read the Docs
     url: https://safe-stack.github.io/docs/intro/
     button: true
   #  - title: SAFE Dojo
@@ -83,21 +87,21 @@ params:
         buttonText: View a Live Demo
   section2:
     title: What is SAFE?
-    subtitle: As an end-to-end, functional-first stack for cloud-ready web development, SAFE brings several technologies together into a single, coherent stack for type-safe, flexible applications that can be written almost entirely in F#.
+    subtitle: A highly productive web development platform that emphasises the use of type-safe F#.
     features:
-    - title: Functional First
-      text: Make use of F# throughout your application stack. No need to compromise by shoehorning your design into an OO framework - make use of functional-first constructs and ideas throughout your codebase in F#, even in the browser! Start taking advantage of F# features such as type providers, rich domain modelling and a safer type system today.
+    - title: Productive
+      text: Develop full stack web applications entirely in F#. Benefit from the power that F# and functional programming brings both on the server with .NET Core but also in the browser. Share types and functions seamlessly - no more manual mapping between browser and server languages!
       # Icon (from /images/illustrations/icons/___.svg)
-      icon: functional-first
-    - title: Skill Reuse
-      text: Reuse your team's server-side development skills across the entire application stack. There's no need to become a Javascript or CSS expert - with tools and libraries such as Fable, Elmish and Fulma, you can create compelling, mobile-friendly web applications today.
-      icon: skill-reuse
-    - title: Code Sharing
-      text: Seamlessly share F# between client and server. Create domain models that exist on client and server without having to worry about serialization, or create validation logic that can run in both browser and server - no need for expensive round trips for validation in the browser.
-      icon: code-sharing
-    - title: Rapid Development Cycle
-      text: Get results - fast. With full support for .NET Core, including flexible cross platform templates, and cutting-edge features like hot module reloading and shared code you can start creating full-blown applications quicker than ever before.
-      icon: rapid-cycle
+      icon: productive
+    - title: Safety-First
+      text: F# levels up the safety of your system without making you write reams of code. Gain more confidence that your code does what you expect it to do, with no dynamic typing required for the browser. And the SAFE Stack runs on trusted platforms such as ASP .NET, .NET Core, NPM and Webpack - popular, high-performance and reliable platforms with millions of users.
+      icon: safety-first
+    - title: Fun
+      text: SAFE Stack brings not only confidence to you but a sense of satisfaction and enjoyment to your development cycle. You'll be delighted with the ease at which you can create client-server web applications that make
+      icon: fun
+    - title: Flexible
+      text: SAFE Stack isn't a walled garden or closed ecosystem. It runs on top of existing ecosystems and tools including ASP .NET Core, .NET Core, Webpack, React and NPM. Using SAFE Stack means you can continue to use the libraries and tools that you already know and love, but still benefitting from the extra benefits that F# brings to the table!
+      icon: flexible
   section3:
     title: SAFE Search
     subtitle: A property search demo built entirely with SAFE

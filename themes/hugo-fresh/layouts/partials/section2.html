@@ -2,6 +2,21 @@
 {{- $title    := index $section2 "title" }}
 {{- $subtitle := index $section2 "subtitle" }}
 {{- $features := index $section2 "features" }}
+<style>
+    @media only screen and (max-width: 768px) {
+        section#benefits div.column.is-narrow {
+            display: flex;
+            justify-content: center;
+        }
+        section#benefits div.column.is-narrow p.image {
+            height:5em;
+            width: 5em;
+        }
+        section#benefits div.column.is-7 div.column {
+            text-align: center;
+        }
+    }
+</style>
 <section id="benefits" class="section is-medium">
     <div class="container">
         <div class="columns">

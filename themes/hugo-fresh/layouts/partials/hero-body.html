@@ -4,10 +4,18 @@
 {{- $buttonText := index $hero "buttontext" }}
 {{- $buttonLink := index $hero "buttonlink" }}
 {{- $image      := index $hero "image" }}
+{{- $tiles    := index $hero "tiles" }}
+<style>
+  @media only screen and (max-width: 768px) {
+    #padlock {
+      display: none;
+    }
+  }
+</style>
 <div class="hero-body">
   <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-5 is-offset-1 landing-caption">
+    <div class="columns is-vcentered" style="padding-bottom:2em;">
+      <div class="column is-4 is-offset-1 landing-caption">
         <h1 class="title is-1 is-bold is-spaced">
           {{ $title }}
         </h1>
@@ -22,11 +30,34 @@
           </a>
         </p>
       </div>
-      <div class="column is-5 is-offset-1">
-        <figure class="image is-4by4">
-          <img src="{{ printf "/images/%s" $image | relURL }}" alt="Description">
+      <div class="column is-5 is-offset-2 has-text-centered">
+        <figure id="padlock" class="image" style="padding-left:5em;">
+          <img src="{{ printf "/images/%s" $image | relURL }}" alt="Description" style="display: block; max-width:20em; max-height:20em; width: auto; height: auto; margin-left:2.5em">
         </figure>
       </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="columns" style="padding-bottom:3em;padding-top:3em;">
+      {{- range $tiles }}
+      <div class="column is-one-third">
+        <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+          <div class="card-title">
+            <h4 >{{ .title }}</h4>
+          </div>
+          <div class="card-icon">
+            <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+          </div>
+          <div class="card-text">
+            <p>{{ .text }}</p>
+          </div>
+          <div class="card-action">
+            <a href="{{ .url }}" class="button btn-align-md primary-btn raised">{{ .buttonText }}</a>
+          </div>
+        </div>
+      </div>
+      {{- end }}
     </div>
   </div>
 </div>

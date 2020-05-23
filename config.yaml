@@ -2,7 +2,6 @@ baseURL: http://localhost:1313/
 languageCode: en-us
 title: SAFE
 theme: hugo-fresh
-STATIC_URL = /static
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
 # Disables warnings
 disableKinds:
@@ -12,9 +11,6 @@ markup:
   goldmark:
     renderer:
       unsafe: true # Allows you to write raw html in your md files
-build:
-  useResourceCacheWhen: fallback
-  writeStats: true
 
 params:
   # Open graph allows easy social sharing. If  you don't want it you can set it to false or just delete the variable
@@ -33,11 +29,11 @@ params:
     title: SAFE Stack
     # Hero subtitle (optional)
 #    subtitle: 
-    subtitle: Dive into the world of F# and reap the benefits of functional programming across your entire stack!
+    subtitle: A highly productive web development platform that emphasises the use of type-safe F#.
     # Button text
     buttontext: Learn More
     # Where the main hero button links to
-    buttonlink: "#explore-further"
+    buttonlink: "#benefits"
     # Hero image (from static/images/___)
     image: illustrations/safe-stack.png
     # Footer logos (from static/images/logos/clients/___.svg)
@@ -46,7 +42,24 @@ params:
       url: https://www.compositional-it.com/
     - client: lambda
       url: https://lambdafactory.io/
-#    - client: fable
+    tiles:
+      - title: Quick Start
+        icon: mouse-globe
+        text: Ready to get hands-on? It's quick and easy.
+        url: https://safe-stack.github.io/docs/quickstart/
+        buttonText: Get Up and Running
+      - title: SAFE Dojo
+        icon: laptop-cloud
+        text: Learn SAFE by doing beginner-friendly challanges.
+        url: https://github.com/CompositionalIT/SAFE-Dojo
+        buttonText: Do the SAFE Dojo
+      - title: Live Demo
+        icon: plug-cloud
+        text: See how it all comes together in production.
+        url: https://safe-search-demo-web.azurewebsites.net/
+        buttonText: View a Live Demo
+
+  #    - client: fable
 #      url: https://fable.io/
 #    - client: elmish
 #      url: https://elmish.github.io/
@@ -67,27 +80,11 @@ params:
 #    tiles:
 #    - icon: mouse-globe
 #      text: 
-  section1:
-    title: Explore Further
-    tiles: 
-      - title: Quick Start
-        icon: mouse-globe
-        text: Ready to get hands-on? It's quick and easy.
-        url: https://safe-stack.github.io/docs/quickstart/
-        buttonText: Get Up and Running
-      - title: SAFE Dojo
-        icon: laptop-cloud
-        text: Learn SAFE by doing beginner-friendly challanges.
-        url: https://github.com/CompositionalIT/SAFE-Dojo
-        buttonText: Do the SAFE Dojo
-      - title: Live Demo
-        icon: plug-cloud
-        text: See how it all comes together in production.
-        url: https://safe-search-demo-web.azurewebsites.net/
-        buttonText: View a Live Demo
+#  section1:
+#    title: Explore Further
   section2:
-    title: What is SAFE?
-    subtitle: A highly productive web development platform that emphasises the use of type-safe F#.
+    title: Why SAFE Stack?
+    subtitle: SAFE Stack allows you to quickly develop compelling web applications that use industry-standard technologies whilst using F# to ensure an enjoyable development experience.
     features:
     - title: Productive
       text: Develop full stack web applications entirely in F#. Benefit from the power that F# and functional programming brings both on the server with .NET Core but also in the browser. Share types and functions seamlessly - no more manual mapping between browser and server languages!

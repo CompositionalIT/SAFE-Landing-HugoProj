@@ -1,9 +1,8 @@
-You need `hugo-extended` installed to generate the deploy files.
+This repo contains the source for the [SAFE Stack landing page](https://github.com/SAFE-Stack/SAFE-Stack.github.io)
 
-You can install `hugo-extended` from your favourite package manager.
+After making changes here, to update the page:
 
-For chocolatey, run `choco install hugo-extended`.
-
-Once you have `hugo-extended` installed, navigate to the root folder of this project and run the command `hugo`.
-
-This will create a folder named `public` at the root folder and generate all the deploy files into it.
+- Install [hugo-extended](https://gohugo.io/getting-started/installing/) (e.g. with `choco install hugo-extended`)
+- Run the command `hugo` from the root of this project.
+- This will generate the content files into the `public` folder.
+- Push these files into https://github.com/SAFE-Stack/SAFE-Stack.github.io

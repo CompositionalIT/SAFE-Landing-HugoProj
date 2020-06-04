@@ -16,7 +16,7 @@ params:
   # Open graph allows easy social sharing. If  you don't want it you can set it to false or just delete the variable
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy 
-  description: 
+  description: The best way to write functional-first web applications.
   navbarlogo:
   # Logo (from static/images/logos/___)
     image: logos/safe_logo.png
@@ -29,7 +29,7 @@ params:
     title: SAFE Stack
     # Hero subtitle (optional)
 #    subtitle: 
-    subtitle: A highly productive web development platform that emphasises the use of type-safe F#.
+    subtitle: The best way to write functional-first web applications.
     # Button text
     buttontext: Learn More
     # Where the main hero button links to
@@ -58,12 +58,6 @@ params:
         text: See how it all comes together in production.
         url: https://safe-search-demo-web.azurewebsites.net/
         buttonText: View a Live Demo
-
-  #    - client: fable
-#      url: https://fable.io/
-#    - client: elmish
-#      url: https://elmish.github.io/
-  # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: About SAFE
     url: https://www.compositional-it.com/news-blog/introducing-the-safe-stack/
@@ -72,16 +66,6 @@ params:
   - title: Read the Docs
     url: https://safe-stack.github.io/docs/intro/
     button: true
-  #  - title: SAFE Dojo
-#    url: https://github.com/CompositionalIT/SAFE-Dojo/
-#    button: true
-#  section1:
-#    title: What is SAFE?
-#    tiles:
-#    - icon: mouse-globe
-#      text: 
-#  section1:
-#    title: Explore Further
   section2:
     title: Why SAFE Stack?
     subtitle: SAFE Stack allows you to quickly develop compelling web applications that use industry-standard technologies whilst using F# to ensure an enjoyable development experience.
@@ -90,15 +74,15 @@ params:
       text: Develop full stack web applications entirely in F#. Benefit from the power that F# and functional programming brings both on the server with .NET Core but also in the browser. Share types and functions seamlessly - no more manual mapping between browser and server languages!
       # Icon (from /images/illustrations/icons/___.svg)
       icon: productive
-    - title: Safety-First
-      text: F# levels up the safety of your system without making you write reams of code. Gain more confidence that your code does what you expect it to do, with no dynamic typing required for the browser. And the SAFE Stack runs on trusted platforms such as ASP .NET, .NET Core, NPM and Webpack - popular, high-performance and reliable platforms with millions of users.
-      icon: safety-first
     - title: Fun
-      text: SAFE Stack brings not only confidence to you but a sense of satisfaction and enjoyment to your development cycle. You'll be delighted with the ease at which you can create client-server web applications that make
+      text: SAFE Stack brings not only confidence to you but a sense of satisfaction and enjoyment to your development cycle. You'll be delighted with the ease at which you can create client-server web applications.
       icon: fun
     - title: Flexible
-      text: SAFE Stack isn't a walled garden or closed ecosystem. It runs on top of existing ecosystems and tools including ASP .NET Core, .NET Core, Webpack, React and NPM. Using SAFE Stack means you can continue to use the libraries and tools that you already know and love, but still benefitting from the extra benefits that F# brings to the table!
+      text: SAFE Stack isn't a walled garden or closed ecosystem. It runs on top of existing ecosystems and tools including ASP .NET Core, .NET Core, Webpack, React and NPM. Using SAFE Stack means you can continue to use the libraries and tools that you already know and love, but still take advantage of the extra benefits that F# brings to the table!
       icon: flexible
+    - title: A Safe Bet
+      text: F# levels up the safety of your system without making you write reams of code. Gain more confidence that your code does what you expect it to do, with no dynamic typing required for the browser. And the SAFE Stack runs on trusted platforms such as ASP .NET, .NET Core, NPM and Webpack - popular, high-performance and reliable platforms with millions of users.
+      icon: safety-first
   section3:
     title: SAFE Search
     subtitle: A property search demo built entirely with SAFE

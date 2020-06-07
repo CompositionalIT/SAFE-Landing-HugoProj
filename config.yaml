@@ -50,7 +50,7 @@ params:
         buttonText: Get Up and Running
       - title: SAFE Dojo
         icon: laptop-cloud
-        text: Learn SAFE by doing beginner-friendly challanges.
+        text: Learn SAFE by doing beginner-friendly challenges.
         url: https://github.com/CompositionalIT/SAFE-Dojo
         buttonText: Do the SAFE Dojo
       - title: Live Demo
